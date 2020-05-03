@@ -11,6 +11,7 @@ import { StructuresComponent } from './structures/structures.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { HeaderComponent } from './header/header.component';
 import { VideoComponent } from './video/video.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { VideoComponent } from './video/video.component';
     StructuresComponent,
     TechnologiesComponent,
     HeaderComponent,
-    VideoComponent
+    VideoComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,42 @@
 *{
 	font-family: castellar;
 }
+
+.hola{
+	background-color: #d93f28;
+	width: 6em;
+	height: 6em;
+	position: fixed;
+	bottom: 10px;
+	left:1em;
+	padding: 1em;
+	border-radius: 25%;
+	color: white;
+
+}
+
+.modalbg{
+	position: fixed;
+	width: 150%;
+	height: 100vh;
+	top:0;
+	left:0;
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s, transform 0.5s;
+	z-index: 4;
+}
+
+.bg-active{
+	visibility: visible;
+	opacity: 1;
+	transform: translateX(-20%); 
+}
+.modal{
+	background-color: white;
+
+}
