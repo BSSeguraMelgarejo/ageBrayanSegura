@@ -1,0 +1,15 @@
+*{
+	/*background-image: url('https://static.ageofempires.com/aoe/wp-content/themes/msgpwebteam/dist/images/header-marble_e09f8276.jpg');*/
+	background-color: #27272f;
+}
+
+.microsoft{
+	width:6em;
+	padding: 1em 0;
+	margin: 0 auto;
+	display: block;
+}
+
+.logo{
+	justify-content: center;
+}

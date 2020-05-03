@@ -9,6 +9,8 @@ import { CivilizationsComponent } from './civilizations/civilizations.component'
 import { UnitsComponent } from './units/units.component';
 import { StructuresComponent } from './structures/structures.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
+import { HeaderComponent } from './header/header.component';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { TechnologiesComponent } from './technologies/technologies.component';
     CivilizationsComponent,
     UnitsComponent,
     StructuresComponent,
-    TechnologiesComponent
+    TechnologiesComponent,
+    HeaderComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,

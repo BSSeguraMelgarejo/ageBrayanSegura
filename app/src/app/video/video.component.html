@@ -1,0 +1,23 @@
+
+<!--here we have the extern container, the bigVideo-->
+<div class="externVideo">
+	<div class="internVideo">
+		<video loop [autoplay]="true" (timeupdate)="onTimeUpdate($event)" class="bigVideo"> <source src="../../assets/video/AgeOfEmpiresVideo.mp4#t=20" type="video/mp4"> </video>
+	</div>
+	
+	<!--and here, the small video-->
+	<div class="header-overlay2" style="display: none;"></div>
+
+	<div class="v-header container" style="display: none;">
+		<div class="fullscreen-video-wrap">
+			<video class="principal" autoplay loop> <source src="../../assets/video/AgeOfEmpiresVideo.mp4#t=20" type="video/mp4"> </video>
+		</div>
+
+		<!--and finally the things "inside" the video, the img and my name-->
+		<div class="header-overlay"></div>
+		<div class="header-content">
+			<img class="logoAge" src="../../assets/img/ageLogo.png" alt="AgeOfEmpires">
+			<h1 class="my_name">BRAYAN SEGURA</h1>
+		</div>
+	</div>
+</div>
