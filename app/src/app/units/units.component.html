@@ -1,0 +1,102 @@
+<!--<p>civilizations works!</p>
+<button (click)="getCivilizations()">get Civilizations</button>
+<img src="https://historia.nationalgeographic.com.es/medio/2019/12/11/guerreros-aztecas-ataviados-con-sus-armas-y-vestimenta-tipicas_df905ca0_1280x720.jpg" (click)="getAztecs()" class="aztecsImg">-->
+
+<div class="container">
+	<div class="row">
+		<div class="col-12 title" >
+			<h2 class="titleUnits">UNIDADES</h2>
+		</div>
+
+		<div class="col-6 d-flex justify-content-center align-items-start">
+			<!--interpolation for change the image-->
+			<img class="imgPrincipal2" [src]="imgUnitVariable">
+		</div>
+		
+		<div class="col-6">
+			<div class="hexagon-gallery">
+				<!--grid for the hexagon-gallery-->
+				      <div class="hex"><img class="imgMin2 ArcherIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/d/dd/Archer_aoe2DE.png/revision/latest?cb=20200401184234" alt="Archer" (click)="getOneUnit(1)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 CrossbowmanIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/d/d1/Crossbowman_aoe2DE.png/revision/latest?cb=20200331010220" alt="Crossbowman" (click)="getOneUnit(2)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 ArbalestIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/d/dc/Arbalester_aoe2DE.png/revision/latest?cb=20200403030432" alt="Arbalest" (click)="getOneUnit(3)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 CavalryArcherIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/b/b1/Cavalryarcher_aoe2DE.png/revision/latest?cb=20200401184346" alt="CavalryArcher" (click)="getOneUnit(4)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 HeavyCavalryArcherIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/e/ec/Heavycavalryarcher_aoe2de.png/revision/latest?cb=20200417072541" alt="HeavyCavalryArcher" (click)="getOneUnit(5)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 HandCannoneerIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/4/47/Hand_cannoneer_aoe2DE.png/revision/latest?cb=20200331011457" alt="HandCannoneer" (click)="getOneUnit(6)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 SkirmisherIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/1/11/Skirmisher_aoe2DE.png/revision/latest?cb=20200331010927" alt="Skirmisher" (click)="getOneUnit(7)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 EliteSkirmisherIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/8/8e/Elite_skirmisher_aoe2DE.png/revision/latest?cb=20200331011145" alt="EliteSkirmisher" (click)="getOneUnit(8)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 EagleWarriorIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/c/c7/Eaglewarrior_aoe2DE.png/revision/latest?cb=20200331191113" alt="EagleWarrior" (click)="getOneUnit(9)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 EagleWarrior2Icon" src="https://vignette.wikia.nocookie.net/ageofempires/images/c/c7/Eaglewarrior_aoe2DE.png/revision/latest?cb=20200331191113" alt="EagleWarrior2" (click)="getOneUnit(10)"></div>
+				      <div class="hex"><img class="imgMin2 EliteEagleWarriorIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/a/a5/Eliteeaglewarrior_aoe2DE.png/revision/latest?cb=20200331191114" alt="EliteEagleWarrior" (click)="getOneUnit(11)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 SpearmanIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/5/5b/Spearman_aoe2DE.png/revision/latest?cb=20200331022103" alt="Spearman" (click)="getOneUnit(12)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 PikemanIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/a/a6/Aoe2-infantry-2-pikeman.png/revision/latest?cb=20200402184138" alt="Pikeman" (click)="getOneUnit(13)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 HalberdierIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/a/aa/Halberdier_aoe2DE.png/revision/latest?cb=20200403174747" alt="Halberdier" (click)="getOneUnit(14)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 MilitiamIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/3/3a/MilitiaDE.png/revision/latest?cb=20200330152943" alt="Militiam" (click)="getOneUnit(15)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 ManAtArmsIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/9/96/Manatarms_aoe2DE.png/revision/latest?cb=20200331001819" alt="ManAtArms" (click)="getOneUnit(16)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 LongSwordmanIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/1/1a/Longswordsman_aoe2DE.png/revision/latest?cb=20200401184348" alt="LongSwordman" (click)="getOneUnit(17)">
+				      </div>
+				      <div class="hex"><img class="imgMin2 TwoHandedSwordsman" src="https://vignette.wikia.nocookie.net/ageofempires/images/3/3c/Twohanded_aoe2DE.png/revision/latest?cb=20200401184348" alt="TwoHandedSwordsman" (click)="getOneUnit(18)">
+				      </div>
+   	 		</div>
+   	 		<div class="information2" >
+   	 			<h3 class="nameUnit">{{nameUnit}}</h3>
+   	 			<h3 class="descriptionUnit">{{descriptionUnit}}</h3>
+   	 			<h3 class="expansionUnit">{{expansionUnit}}</h3>
+   	 			
+   	 		</div>
+		</div>
+		
+	</div>
+</div>
+
+<!--
+
+
+Crossbowman
+
+Arbalest
+
+Cavalry Archer
+
+Heavy Cavalry Archer
+
+Hand Cannoneer
+
+Skirmisher
+
+Elite Skirmisher
+
+Eagle Warrior
+
+Eagle Warrior
+
+Elite Eagle Warrior
+
+Spearman
+
+Pikeman
+
+Halberdier
+
+Militia
+
+Man At Arms
+
+Long Swordman
+
+Two Handed Swordsman
+-->

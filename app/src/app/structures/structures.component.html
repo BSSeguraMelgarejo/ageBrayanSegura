@@ -1,0 +1,98 @@
+<!--<p>civilizations works!</p>
+<button (click)="getCivilizations()">get Civilizations</button>
+<img src="https://historia.nationalgeographic.com.es/medio/2019/12/11/guerreros-aztecas-ataviados-con-sus-armas-y-vestimenta-tipicas_df905ca0_1280x720.jpg" (click)="getAztecs()" class="aztecsImg">-->
+
+<div class="container">
+	<div class="row">
+		<div class="col-12 title" >
+			<h2 class="titleStructures">ESTRUCTURAS</h2>
+		</div>
+		<div class="col-6">
+			<div class="hexagon-gallery">
+				<!--grid for the hexagon-gallery-->
+				      <div class="hex"><img class="imgMin3 BarracksIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/5/50/Barracks_aoe2DE.png/revision/latest?cb=20200405044034" alt="Barracks" (click)="getOneStructure(1)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 DockIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/4/49/Dock_aoe2de.png/revision/latest?cb=20200410030938" alt="Dock" (click)="getOneStructure(2)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 FarmIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/9/98/FarmDE.png/revision/latest?cb=20200330133935" alt="Farm" (click)="getOneStructure(3)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 FishTrapIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/8/8c/Fish_trap_aoe2DE.png/revision/latest?cb=20200403193055" alt="FishTrap" (click)="getOneStructure(4)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 HouseIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/3/37/House_aoe2DE.png/revision/latest?cb=20200403193055" alt="House" (click)="getOneStructure(5)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 LumberCampIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/2/28/Lumber_camp_aoe2de.png/revision/latest?cb=20200410030939" alt="LumberCamp" (click)="getOneStructure(6)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 MillIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/5/5a/Mill_aoe2de.png/revision/latest?cb=20200410030939" alt="Mill" (click)="getOneStructure(7)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 MiningCampIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/3/32/Mining_camp_aoe2de.png/revision/latest?cb=20200410030940" alt="MiningCamp" (click)="getOneStructure(8)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 TownCenterIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/6/68/Towncenter_aoe2DE.png/revision/latest?cb=20200403062001" alt="TownCenter" (click)="getOneStructure(9)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 ArcheryRangeIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/4/42/Archery_range_aoe2DE.png/revision/latest?cb=20200405044033" alt="ArcheryRange" (click)="getOneStructure(10)"></div>
+				      <div class="hex"><img class="imgMin3 Barracks2Icon" src="https://vignette.wikia.nocookie.net/ageofempires/images/5/50/Barracks_aoe2DE.png/revision/latest?cb=20200405044034" alt="Barracks2" (click)="getOneStructure(11)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 BlacksmithIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/6/64/Blacksmith_aoe2de.png/revision/latest?cb=20200410030937" alt="Blacksmith" (click)="getOneStructure(12)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 Dock2Icon" src="https://vignette.wikia.nocookie.net/ageofempires/images/4/49/Dock_aoe2de.png/revision/latest?cb=20200410030938" alt="Dock2" (click)="getOneStructure(13)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 House2Icon" src="https://vignette.wikia.nocookie.net/ageofempires/images/3/37/House_aoe2DE.png/revision/latest?cb=20200403193055" alt="House2" (click)="getOneStructure(14)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 LumberCamp2Icon" src="https://vignette.wikia.nocookie.net/ageofempires/images/2/28/Lumber_camp_aoe2de.png/revision/latest?cb=20200410030939" alt="LumberCamp2" (click)="getOneStructure(15)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 MarketIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/3/3b/Market_aoe2DE.png/revision/latest?cb=20200405044035" alt="TMarket" (click)="getOneStructure(16)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 Mill2Icon" src="https://vignette.wikia.nocookie.net/ageofempires/images/5/5a/Mill_aoe2de.png/revision/latest?cb=20200410030939" alt="Mill2" (click)="getOneStructure(17)">
+				      </div>
+				      <div class="hex"><img class="imgMin3 MiningCamp2Icon" src="https://vignette.wikia.nocookie.net/ageofempires/images/3/32/Mining_camp_aoe2de.png/revision/latest?cb=20200410030940" alt="MiningCamp2" (click)="getOneStructure(18)">
+				      </div>
+   	 		</div>
+   	 		<div class="information3" >
+   	 			<h3 class="nameStructure">{{nameStructure}}</h3>
+   	 			<h3 class="expansionStructure">{{expansionStructure}}</h3>
+   	 			<h3 class="ageStructure">{{ageStructure}}</h3>
+   	 		</div>
+		</div>
+		<div class="col-6 d-flex justify-content-center align-items-start">
+			<!--interpolation for change the image-->
+			<img class="imgPrincipal3" [src]="imgStructureVariable">
+		</div>
+	</div>
+</div>
+
+<!--
+
+
+Dock
+
+Farm
+
+FishTrap
+
+House
+
+LumberCamp
+
+Mill
+
+MiningCamp
+
+TownCenter
+
+
+
+Barracks
+
+Blacksmith
+
+Dock
+
+House2
+
+LumberCamp
+
+Market
+
+Mill
+
+MiningCamp
+-->
