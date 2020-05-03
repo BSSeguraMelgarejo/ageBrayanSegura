@@ -1,0 +1,347 @@
+
+/*--img {--*/
+  /*width: 100%;*/
+  /*height: auto;*/
+  /*--display: block;--*/
+  /*object-fit: cover;*/
+/*--}--*/
+
+/*styles for title*/
+.title{
+	text-align: center;
+	padding: 4em 0;
+}
+
+.titleCivilizations{
+	font-weight: bolder;
+  font-size: 3em; 
+  -webkit-background-clip: text; 
+-moz-background-clip: text; 
+background-clip: text; 
+color: #d93f28; 
+text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+
+}
+
+/*styles for the grid*/
+.hexagon-gallery {
+  margin: auto;
+  display: grid;
+  /*8 columns*/
+  /*repeat 8 times, each one the same size*/
+  grid-template-columns: repeat(10, 1fr);
+  /*rows size*/
+  grid-auto-rows: 2.5rem;
+  /*space between tiles*/
+  grid-gap: 1.5rem;
+  padding-bottom: 50px;
+}
+
+/*styles for each one*/
+.hex {
+  display: flex;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  background-color: #424242;
+  /*view just a part of the div*/
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hex:first-child {
+  grid-row-start: 1;
+  grid-column: 2 / span 2;
+}
+
+.hex:nth-child(2) {
+  grid-row-start: 1;
+  grid-column: 4 / span 2;
+}
+
+.hex:nth-child(3) {
+  grid-row-start: 1;
+  grid-column: 6 / span 2;
+}
+
+.hex:nth-child(4) {
+  grid-row-start: 1;
+  grid-column: 8 / span 2;
+}
+
+.hex:nth-child(5) {
+  grid-row-start: 2;
+  grid-column: 1 / span 2;
+}
+
+.hex:nth-child(6) {
+  grid-row-start: 2;
+  grid-column: 3 / span 2;
+}
+
+.hex:nth-child(7) {
+  grid-row-start: 2;
+  grid-column: 5 / span 2;
+}
+
+.hex:nth-child(8) {
+  grid-row-start: 2;
+  grid-column: 7 / span 2;
+}
+
+.hex:nth-child(9) {
+  grid-row-start: 2;
+  grid-column: 9 / span 2;
+}
+
+.hex:nth-child(10) {
+  grid-row-start: 3;
+  grid-column: 2 / span 2;
+}
+
+.hex:nth-child(11) {
+  grid-row-start: 3;
+  grid-column: 4 / span 2;
+}
+
+
+.hex:nth-child(12) {
+  grid-row-start: 3;
+  grid-column: 6 / span 2;
+}
+
+
+.hex:nth-child(13) {
+  grid-row-start: 3;
+  grid-column: 8 / span 2;
+}
+
+.hex:nth-child(14) {
+  grid-row-start: 4;
+  grid-column: 1 / span 2;
+}
+
+.hex:nth-child(15) {
+  grid-row-start: 4;
+  grid-column: 3 / span 2;
+}
+
+.hex:nth-child(16) {
+  grid-row-start: 4;
+  grid-column: 5 / span 2;
+}
+
+.hex:nth-child(17) {
+  grid-row-start: 4;
+  grid-column: 7 / span 2;
+}
+
+.hex:nth-child(18) {
+  grid-row-start: 4;
+  grid-column: 9 / span 2;
+}
+/*
+@media (max-width: 767px) {
+  .hex-grid {
+    width: 100%;
+    left: 0;
+  }
+}
+*/
+
+.imgPrincipal{
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.imgMin{
+display: block;
+cursor:pointer;
+}
+
+/*styles for information*/
+.information{
+  text-align: center;
+  padding: 2em 0;
+}
+
+.AztectsIcon{
+  -webkit-filter:blur(0px);
+}
+
+.AztectsIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.BritonsIcon{
+  -webkit-filter:blur(0px);
+}
+
+.BritonsIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.BizantinesIcon{
+  -webkit-filter:blur(0px);
+}
+
+.BizantinesIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+
+.CeltsIcon{
+  -webkit-filter:blur(0px);
+}
+
+.CeltsIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.ChineseIcon{
+  -webkit-filter:blur(0px);
+}
+
+.ChineseIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.FranksIcon{
+  -webkit-filter:blur(0px);
+}
+
+.FranksIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.GothsIcon{
+  -webkit-filter:blur(0px);
+}
+
+.GothsIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.HunsIcon{
+  -webkit-filter:blur(0px);
+}
+
+.HunsIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.JapaneseIcon{
+  -webkit-filter:blur(0px);
+}
+
+.JapaneseIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.KoreansIcon{
+  -webkit-filter:blur(0px);
+}
+
+.KoreansIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.MayansIcon{
+  -webkit-filter:blur(0px);
+}
+
+.MayansIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+
+
+.MongolsIcon{
+  -webkit-filter:blur(0px);
+}
+
+.MongolsIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.PersiansIcon{
+  -webkit-filter:blur(0px);
+}
+
+.PersiansIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+
+.SaracensIcon{
+  -webkit-filter:blur(0px);
+}
+
+.SaracensIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.SpanishIcon{
+  -webkit-filter:blur(0px);
+}
+
+.SpanishIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.TeutonsIcon{
+  -webkit-filter:blur(0px);
+}
+
+.TeutonsIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.TurksIcon{
+  -webkit-filter:blur(0px);
+}
+
+.TurksIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.VikingsIcon{
+  -webkit-filter:blur(0px);
+}
+
+.VikingsIcon:hover{
+  transition: all 0.2s ease;
+  -webkit-filter:blur(2px);
+}
+
+.nameCivilization{
+  font-size: 2.5em;
+  color:#a06121;
+}
+
+.expansionCivilization{
+font-size: 1.3em;
+color:#a06121;
+}
+
+.type_armyCivilization{
+  font-size: 1.3em;
+  color:#a06121;
+}

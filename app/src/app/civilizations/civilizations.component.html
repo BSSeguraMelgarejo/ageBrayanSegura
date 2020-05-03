@@ -1,1 +1,61 @@
-<p>civilizations works!</p>
+<!--<p>civilizations works!</p>
+<button (click)="getCivilizations()">get Civilizations</button>
+<img src="https://historia.nationalgeographic.com.es/medio/2019/12/11/guerreros-aztecas-ataviados-con-sus-armas-y-vestimenta-tipicas_df905ca0_1280x720.jpg" (click)="getAztecs()" class="aztecsImg">-->
+
+<div class="container">
+	<div class="row">
+		<div class="col-12 title" >
+			<h2 class="titleCivilizations">CIVILIZACIONES</h2>
+		</div>
+		<div class="col-6">
+			<div class="hexagon-gallery">
+				<!--grid for the hexagon-gallery-->
+				      <div class="hex"><img class="imgMin AztectsIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/3/37/Wonderaztecs.png/revision/latest?cb=20160106072210" alt="Aztecs" (click)="getOneCivilization(1)">
+				      </div>
+				      <div class="hex"><img class="imgMin BritonsIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/0/0a/Wonderbritons.png/revision/latest?cb=20160106072814" alt="Britons" (click)="getOneCivilization(2)">
+				      </div>
+				      <div class="hex"><img class="imgMin BizantinesIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/5/51/Wonderbyzantines.png/revision/latest?cb=20160106072949" alt="Bizantines" (click)="getOneCivilization(3)">
+				      </div>
+				      <div class="hex"><img class="imgMin CeltsIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/6/6d/Wondercelts.png/revision/latest?cb=20160106073125" alt="Celts" (click)="getOneCivilization(4)">
+				      </div>
+				      <div class="hex"><img class="imgMin ChineseIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/6/69/Wonderchinese.png/revision/latest?cb=20160106073304" alt="Chinese" (click)="getOneCivilization(5)">
+				      </div>
+				      <div class="hex"><img class="imgMin FranksIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/9/9a/Wonderfranks.png/revision/latest?cb=20160106074054" alt="Franks" (click)="getOneCivilization(6)">
+				      </div>
+				      <div class="hex"><img class="imgMin GothsIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/a/ae/Wondergoths.png/revision/latest?cb=20160106074209" alt="Goths" (click)="getOneCivilization(7)">
+				      </div>
+				      <div class="hex"><img class="imgMin HunsIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/b/bc/Wonderhuns.png/revision/latest?cb=20160106074333" alt="Huns" (click)="getOneCivilization(8)">
+				      </div>
+				      <div class="hex"><img class="imgMin JapaneseIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/1/1c/Wonderjapanese.png/revision/latest?cb=20160106075259" alt="Japanese" (click)="getOneCivilization(9)">
+				      </div>
+				      <div class="hex"><img class="imgMin KoreansIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/8/89/Wonderkoreans.png/revision/latest?cb=20160106075420" alt="Koreans" (click)="getOneCivilization(10)"></div>
+				      <div class="hex"><img class="imgMin MayansIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/0/07/Wondermayans.png/revision/latest?cb=20160106075913" alt="Mayans" (click)="getOneCivilization(11)">
+				      </div>
+				      <div class="hex"><img class="imgMin MongolsIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/b/b9/Wondermongols.png/revision/latest?cb=20160106080044" alt="Mongols" (click)="getOneCivilization(12)">
+				      </div>
+				      <div class="hex"><img class="imgMin PersiansIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/a/a1/Wonderpersians.png/revision/latest?cb=20160106080215" alt="Persians" (click)="getOneCivilization(13)">
+				      </div>
+				      <div class="hex"><img class="imgMin SaracensIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/8/81/Wondersaracens.png/revision/latest?cb=20160106080507" alt="Saracens" (click)="getOneCivilization(14)">
+				      </div>
+				      <div class="hex"><img class="imgMin SpanishIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/a/ad/Wonderspanish.png/revision/latest?cb=20160106080801" alt="Spanish" (click)="getOneCivilization(15)">
+				      </div>
+				      <div class="hex"><img class="imgMin TeutonsIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/c/c7/Wonderteutons.png/revision/latest?cb=20160106080922" alt="Teutons" (click)="getOneCivilization(16)">
+				      </div>
+				      <div class="hex"><img class="imgMin TurksIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/a/ab/Wonderturks.png/revision/latest?cb=20160106081034" alt="Turks" (click)="getOneCivilization(17)">
+				      </div>
+				      <div class="hex"><img class="imgMin VikingsIcon" src="https://vignette.wikia.nocookie.net/ageofempires/images/2/29/Wondervikings.png/revision/latest?cb=20160106081152" alt="Vikings" (click)="getOneCivilization(18)">
+				      </div>
+   	 		</div>
+   	 		<div class="information" >
+   	 			<h3 class="nameCivilization">{{nameCivilization}}</h3>
+   	 			<h3 class="expansionCivilization">{{expansionCivilization}}</h3>
+   	 			<h3 class="type_armyCivilization">{{army_typeCivilization}}</h3>
+   	 		</div>
+		</div>
+		<div class="col-6 d-flex justify-content-center align-items-start">
+			<!--interpolation for change the image-->
+			<img class="imgPrincipal" [src]="imgCivilizationVariable">
+		</div>
+	</div>
+</div>
+
